@@ -1,16 +1,3 @@
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +18,20 @@ a {
   height: 200px;
   border: none;
   outline: none;
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close {
+  color: #fff;
+}
+
+.sl-wrapper .sl-counter {
+  color: #fff;
+}
+
+.sl-wrapper .sl-navigation button {
+  color: #fff;
 }

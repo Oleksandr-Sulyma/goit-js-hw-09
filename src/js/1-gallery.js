@@ -1,6 +1,9 @@
 console.log('Gallery');
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import SimpleLightbox from 'simplelightbox';
+import '../css/styles.css';
+  
+
 const images = [
   {
     preview:
@@ -70,7 +73,7 @@ const images = [
 const main = document.querySelector('main');
 
 const galleryBox = document.createElement('div');
-main.appendChild(galleryBox);
+main.appendChild(galleryBox)
 
 const gallery = document.createElement('ul');
 galleryBox.appendChild(gallery);

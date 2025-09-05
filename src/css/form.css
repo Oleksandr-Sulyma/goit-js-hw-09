@@ -3,9 +3,19 @@
   flex-direction: column;
   gap: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin-top: 20px;
-  max-width: 350px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 .label-box {
   display: flex;
@@ -14,47 +24,54 @@
   width: 100%;
   gap: 8px;
 }
-.input-email {
-  width: 100%;
-  height: 32px;
-  border-radius: 4px;
-  padding: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  background-color: rgb(245, 242, 242);
+.input-email,
+.input-message {
+  padding: 8px 16px;
   box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
 }
 
 .input-message {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  padding: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  background-color: rgb(245, 242, 242);
-  box-sizing: border-box;
+  height: 80px;
+}
+
+.input-email,
+.input-message:hover {
+  border: 1px solid #000;
 }
 
 .btn-submit {
-  width: 100%;
-  max-width: 160px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: rgb(117, 123, 255, 1);
-  color: #fff;
-  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  font-family: var(--font-family);
   font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-  align-self: center;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 8px;
 }
 
 .btn-submit:hover {
-  background-color: rgba(117, 90, 200, 1); /* темніший синій при наведенні */
-  transform: scale(1.05); /* трохи збільшуємо кнопку */
+  background: #6c8cff;
 }
 
 .btn-submit:active {
-  background-color: rgba(117, 70, 170, 1); /* ще темніший при кліку */
-  transform: scale(0.98); /* невелике натискання */
+  background: #6c8cff;
+  transform: scale(0.98);
+}
+
+.btn-submit:focus {
+  outline: none;
+  background: #4e75ff;
 }
