@@ -1,0 +1,60 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 350px;
+}
+.label-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 8px;
+}
+.input-email {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+}
+
+.input-message {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(117, 123, 255, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  align-self: center;
+}
+
+.btn-submit:hover {
+  background-color: rgba(117, 90, 200, 1); /* темніший синій при наведенні */
+  transform: scale(1.05); /* трохи збільшуємо кнопку */
+}
+
+.btn-submit:active {
+  background-color: rgba(117, 70, 170, 1); /* ще темніший при кліку */
+  transform: scale(0.98); /* невелике натискання */
+}

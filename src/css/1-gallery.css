@@ -1,0 +1,34 @@
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  max-width: 1128px;
+  /* height: 696px; */
+  background: #fff;
+  margin: 0 auto;
+  padding: 24px 156px;
+}
+
+.gallery-image {
+  display: block;
+  object-fit: cover;
+  width: 340px;
+  height: 200px;
+  border: none;
+  outline: none;
+}
